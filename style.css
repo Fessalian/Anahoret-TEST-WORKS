@@ -1,0 +1,24 @@
+.mainclass 
+{
+    font-size: 14px;
+    height: 700px;
+    margin:auto;
+    padding:0;
+    width:  500px;
+}
+	    
+time
+{
+    display:block;
+}
+.time
+{
+    display:inline-block;
+    font-weight:bold;
+    margin-top:30px;
+    text-decoration:underline;
+}	 
+.time2
+{
+     display:inline-block;
+}	

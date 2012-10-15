@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset=Windows-1251>
+    <title>TEST</title>
+	  <script src="http://code.jquery.com/jquery-latest.js"></script>
+	  <script src="jtest.js"></script>	  
+	  <link rel="stylesheet" href="style.css">	  
+  </head>
+  <body>
+    <section class="mainclass">
+	    <header>
+	         <h1>TEST</h1>
+	    </header>
+
+	      <article>
+	    	    <fieldset id="innercontent"> 
+					  <label class="time">example 1</label>
+					  <label class="time2">2012-08-14T20:03Z,2012-08-15T19:40Z,2012-08-16T19:40Z,2012-08-18T08:15Z</label>					  
+					  <time data-interval="2012-08-14T20:03Z,2012-08-15T19:40Z,2012-08-16T19:40Z,2012-08-18T08:15Z">empty</time>
+					  
+					  <label class="time">example 2</label>
+					  <label class="time2">2012-08-15T19:40Z,2012-08-14T20:03Z,2012-08-18T08:15Z,2012-08-16T19:40Z</label>					  
+					  <time data-interval="2012-08-15T19:40Z,2012-08-14T20:03Z,2012-08-18T08:15Z,2012-08-16T19:40Z">empty</time>
+					  
+					  <label class="time">example 3</label>
+					  <label class="time2">2012-08-15T19:40Z,2012-08-14T20:03Z,2012-08-18T08:15Z,2012-09-16T19:40Z</label>					  
+					  <time data-interval="2012-08-15T19:40Z,2012-08-14T20:03Z,2012-08-18T08:15Z,2012-09-16T19:40Z">empty</time>
+					  
+					  <label class="time">example 4</label>
+					  <label class="time2">2012-08-15T19:40Z,2012-08-14T20:03Z,2013-08-18T08:15Z,2012-09-16T19:40Z,2012-07-14T20:03Z,2013-08-12T08:15Z,2012-09-15T19:40Z</label>					  
+					  <time data-interval="2012-08-15T19:40Z,2012-08-14T20:03Z,2013-08-18T08:15Z,2012-09-16T19:40Z,2012-07-14T20:03Z,2013-08-12T08:15Z,2012-09-15T19:40Z">empty</time>							  							  					  
+				</fieldset>
+	      </article>
+
+	    <footer>
+	    </footer>
+    </section>    
+  </body>
+	<script> 
+	/* ***********************JS****************************** */
+$(function() {
+  "use strict";
+   $("time").convertISOinterval().css({fontWeight:"bold"});
+});
+	/* ***********************JS****************************** */		  
+    </script> 
+</html>
